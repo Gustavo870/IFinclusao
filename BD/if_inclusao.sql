@@ -3,8 +3,8 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 19/08/2026 às 16:09
--- Versão do servidor: 10.4.32-MariaDB
+-- Tempo de geração: 19/08/2026 às 19:26
+-- Versão do servidor: 8.4.8
 -- Versão do PHP: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -28,11 +28,11 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `sinais` (
-  `idSinal` int(11) NOT NULL,
-  `nomeSinal` varchar(100) NOT NULL,
-  `fotoSinal` varchar(200) NOT NULL,
-  `categoriaSinal` varchar(100) NOT NULL,
-  `descricaoSinal` text NOT NULL
+  `idSinal` int NOT NULL,
+  `nomeSinal` varchar(100) COLLATE utf8mb4_general_ci NOT NULL,
+  `fotoSinal` varchar(200) COLLATE utf8mb4_general_ci NOT NULL,
+  `categoriaSinal` varchar(100) COLLATE utf8mb4_general_ci NOT NULL,
+  `descricaoSinal` text COLLATE utf8mb4_general_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -57,6 +57,27 @@ INSERT INTO `sinais` (`idSinal`, `nomeSinal`, `fotoSinal`, `categoriaSinal`, `de
 (15, 'Operador Lógico OU', 'assets/img/operadores/operadorLogicoOu.png', 'Operadores', 'Permite que uma das condições seja verdadeira.'),
 (16, 'Menor ou Igual', 'assets/img/operadores/menorOuIgual.png', 'Operadores', 'Operador que verifica se um valor é menor igual a outro.');
 
+-- --------------------------------------------------------
+
+--
+-- Estrutura para tabela `usuarios`
+--
+
+CREATE TABLE `usuarios` (
+  `idUsuario` int NOT NULL,
+  `nomeUsuario` varchar(50) NOT NULL,
+  `emailUsuario` varchar(50) NOT NULL,
+  `senhaUsuario` varchar(100) NOT NULL,
+  `opcaoUsuario` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Despejando dados para a tabela `usuarios`
+--
+
+INSERT INTO `usuarios` (`idUsuario`, `nomeUsuario`, `emailUsuario`, `senhaUsuario`, `opcaoUsuario`) VALUES
+(1, 'alan', 'baixinhodesouzaa@gmail.com', '25d55ad283aa400af464c76d713c07ad', 'SOU UMA PESSOA SURDA');
+
 --
 -- Índices para tabelas despejadas
 --
@@ -68,6 +89,12 @@ ALTER TABLE `sinais`
   ADD PRIMARY KEY (`idSinal`);
 
 --
+-- Índices de tabela `usuarios`
+--
+ALTER TABLE `usuarios`
+  ADD PRIMARY KEY (`idUsuario`);
+
+--
 -- AUTO_INCREMENT para tabelas despejadas
 --
 
@@ -75,7 +102,13 @@ ALTER TABLE `sinais`
 -- AUTO_INCREMENT de tabela `sinais`
 --
 ALTER TABLE `sinais`
-  MODIFY `idSinal` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `idSinal` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+
+--
+-- AUTO_INCREMENT de tabela `usuarios`
+--
+ALTER TABLE `usuarios`
+  MODIFY `idUsuario` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
