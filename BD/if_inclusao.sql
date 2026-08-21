@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 21/08/2026 às 14:50
+-- Tempo de geração: 21/08/2026 às 15:10
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -88,7 +88,8 @@ INSERT INTO `sinais` (`idSinal`, `nomeSinal`, `fotoSinal`, `categoriaSinal`, `de
 (48, 'Site', 'assets/img/informaticaBasica/site.MP4', 'Informática Básica', 'Conjunto de páginas digitais interligadas, hospedadas em um servidor e acessíveis na internet por meio de um endereço único.'),
 (49, 'Condição Encadeada Simples', 'assets/img/estruturasControle/condicionalEncadeadaSimples.MP4', 'Estruturas de Controle', 'Estrutura onde um comando de decisão (se/if) fica dentro de outro. Serve para testar uma nova regra apenas se a primeira regra for verdadeira ou falsa.'),
 (50, 'Condição Encadeada Heterogênea', 'assets/img/estruturasControle/condicionalEncadeadaHeterogenea.MP4', 'Estruturas de Controle', 'Ocorre quando há vários comandos se (if) aninhados ou encadeados, mas sem um padrão lógico uniforme.'),
-(51, 'Condição Encadeada Homogênea', 'assets/img/estruturasControle/condicionalEncadeadaHomogenea.MP4', 'Estruturas de Controle', 'Ocorre quando comandos se-então são encaixados de forma uniforme e exclusiva apenas dentro dos blocos de teste, geralmente equivalendo a uma única validação com múltiplos operadores lógicos ou a uma estrutura de múltipla escolha.');
+(51, 'Condição Encadeada Homogênea', 'assets/img/estruturasControle/condicionalEncadeadaHomogenea.MP4', 'Estruturas de Controle', 'Ocorre quando comandos se-então são encaixados de forma uniforme e exclusiva apenas dentro dos blocos de teste, geralmente equivalendo a uma única validação com múltiplos operadores lógicos ou a uma estrutura de múltipla escolha.'),
+(52, 'Colar (ctrl+v)', 'assets/img/informaticaBasica/colar.MP4', 'Informática Básica', 'ato de inserir um conteúdo — como texto, imagem ou arquivo — que foi previamente copiado ou recortado para a memória temporária do sistema (área de transferência)');
 
 -- --------------------------------------------------------
 
@@ -135,7 +136,7 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de tabela `sinais`
 --
 ALTER TABLE `sinais`
-  MODIFY `idSinal` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=52;
+  MODIFY `idSinal` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=53;
 
 --
 -- AUTO_INCREMENT de tabela `usuarios`
