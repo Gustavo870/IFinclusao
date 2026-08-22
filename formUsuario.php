@@ -1,11 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Login</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top" style="background-color: #fffbf0;">
+
 <?php include "header.php" ?>
 
 
-<div class="d-flex justify-content-center mb-3">
+<div class="d-flex justify-content-center mb-5">
         <h2>Cadastro</h2>
 </div>
 
-    <div class="d-flex justify-content-center mb-3">
+    <div class="d-flex justify-content-center mb-5">
         <form action="actionUsuario.php" method="POST" class="was-validated" enctype="multipart/form-data">
 
             <div class="form-floating mt-3 mb-3">

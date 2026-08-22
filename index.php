@@ -147,7 +147,7 @@
             <p>Explore nosso dicionário de sinais relacionadosà informática e descubra uma nova forma deaprender tecnologia.</p>
         </div>
         <div class="explorar-botao">
-            <a href="#" class="btn-explorar">EXPLORAR SINAIS</a>
+            <a href="dicionario.php" class="btn-explorar">EXPLORAR SINAIS</a>
         </div>
     </div>
 </section>

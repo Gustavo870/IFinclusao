@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="style.css"> <!-- Precisa estar aqui para funcionar nos outros códigos -->
+
 <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
 
     <div class="navbar-container">
@@ -36,19 +38,19 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#equidade">
+                    <a class="nav-link" href="index.php#equidade">
                         EQUIDADE NA EDUCAÇÃO
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#libras">
+                    <a class="nav-link" href="index.php#libras">
                         IMPORTÂNCIA DA LIBRAS
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#sinais">
+                    <a class="nav-link" href="index.php#sinais">
                         SINAIS NA TI
                     </a>
                 </li>
@@ -57,14 +59,16 @@
 
 
             <!-- PESQUISA -->
-            <form class="search-form">
+            <form class="search-form" onsubmit="event.preventDefault();">
 
                 <input
+                    id="inputPesquisa"
                     type="text"
                     placeholder="Pesquisar..."
+                    onkeyup="filtrarConteudoPagina()"
                 >
 
-                <button type="submit">
+                <button type="button" onclick="filtrarConteudoPagina()">
                     🔍
                 </button>
 
