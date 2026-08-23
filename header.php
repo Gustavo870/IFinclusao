@@ -1,5 +1,3 @@
-<link rel="stylesheet" href="style.css"> <!-- Precisa estar aqui para funcionar nos outros códigos -->
-
 <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
 
     <div class="navbar-container">
@@ -9,7 +7,7 @@
         </a>
 
 
-        <!-- botao -->
+        <!-- BOTÃO DO MENU MOBILE -->
         <button
             class="navbar-toggler"
             type="button"
@@ -23,7 +21,7 @@
         </button>
 
 
-        <!-- menu -->
+        <!-- MENU -->
         <div
             class="collapse navbar-collapse"
             id="navbarResponsive"
@@ -50,7 +48,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="index.php#sinais">
+                    <a class="nav-link" href="dicionario.php">
                         SINAIS NA TI
                     </a>
                 </li>
@@ -58,19 +56,20 @@
             </ul>
 
 
+            <!-- BOTÃO LOGIN -->
+            <a href="formLogin.php" class="btn-login">
+                LOGIN
+            </a>
+
+
             <!-- PESQUISA -->
-            <form class="search-form" onsubmit="event.preventDefault();">
+            <form class="search-form">
 
                 <input
-                    id="inputPesquisa"
                     type="text"
                     placeholder="Pesquisar..."
-                    onkeyup="filtrarConteudoPagina()"
+                    aria-label="Pesquisar"
                 >
-
-                <button type="button" onclick="filtrarConteudoPagina()">
-                    🔍
-                </button>
 
             </form>
 
