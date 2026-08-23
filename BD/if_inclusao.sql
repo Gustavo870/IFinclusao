@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 20/08/2026 às 16:11
+-- Tempo de geração: 21/08/2026 às 15:10
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -75,7 +75,21 @@ INSERT INTO `sinais` (`idSinal`, `nomeSinal`, `fotoSinal`, `categoriaSinal`, `de
 (35, 'Aplicativo', 'assets/img/informaticaBasica/aplicativo.MP4', 'Informática Básica', 'Programa de software criado para ajudar o usuário em uma tarefa ou função específica.'),
 (36, 'Copiar (ctrl c)', 'assets/img/informaticaBasica/copiar.MP4', 'Informática Básica', 'Ação de duplicar um arquivo, texto ou imagem para usá-lo em outro lugar, mantendo o original intacto.'),
 (37, 'Recortar (ctrl x)', 'assets/img/informaticaBasica/recortar.MP4', 'Informática Básica', 'Remover um item selecionado (como um texto, arquivo ou imagem) do seu lugar original e guardá-lo temporariamente na memória para movê-lo e colar em outro destino.'),
-(38, 'Software', 'assets/img/informaticaBasica/software.MP4', 'Informática Básica', 'Parte lógica de um computador ou dispositivo eletrônico. Trata-se de um conjunto de instruções, dados e programas que orientam o hardware (a parte física) sobre como executar tarefas e funcionar corretamente.');
+(38, 'Software', 'assets/img/informaticaBasica/software.MP4', 'Informática Básica', 'Parte lógica de um computador ou dispositivo eletrônico. Trata-se de um conjunto de instruções, dados e programas que orientam o hardware (a parte física) sobre como executar tarefas e funcionar corretamente.'),
+(39, 'Código', 'assets/img/logicaProgramacao/codigo.MP4', 'Lógica de Programação', 'Conjunto de instruções escritas em uma linguagem de programação que diz ao computador como executar tarefas, criar softwares, aplicativos e páginas.'),
+(40, 'Debug', 'assets/img/logicaProgramacao/debug.MP4', 'Lógica de Programação', 'Processo de encontrar, analisar e corrigir erros — conhecidos como bugs — no código de um programa de computador.'),
+(41, 'Bug', 'assets/img/informaticaBasica/bug.MP4', 'Informática Básica', 'Erro, falha ou defeito em um programa de computador ou sistema que faz com que ele funcione mal, trave ou apresente um resultado inesperado.'),
+(42, 'Teclado', 'assets/img/informaticaBasica/teclado.MP4', 'Informática Básica', 'Periférico de entrada que serve para digitar textos, números e enviar comandos para o computador.'),
+(43, 'Monitor', 'assets/img/informaticaBasica/monitor.MP4', 'Informática Básica', 'Principal dispositivo de saída de um computador. Ele recebe os dados processados pela placa de vídeo e os exibe em forma de imagens, textos e vídeos, permitindo que você veja e use o sistema.'),
+(44, 'Input', 'assets/img/logicaProgramacao/input.MP4', 'Lógica de Programação', 'Ato de fornecer dados ou informações para um sistema ou algoritmo processar.'),
+(45, 'Output', 'assets/img/logicaProgramacao/Output.MP4', 'Lógica de Programação', 'Resultado final gerado por um programa após processar os dados de entrada.'),
+(46, 'Hardware', 'assets/img/informaticaBasica/hardware.MP4', 'Informática Básica', 'Parte física de um computador ou aparelho eletrônico.'),
+(47, 'Links', 'assets/img/informaticaBasica/links.MP4', 'Informática Básica', 'Elemento clicável em uma página digital que conecta e direciona o usuário para outro site, documento ou endereço na internet com apenas um toque.'),
+(48, 'Site', 'assets/img/informaticaBasica/site.MP4', 'Informática Básica', 'Conjunto de páginas digitais interligadas, hospedadas em um servidor e acessíveis na internet por meio de um endereço único.'),
+(49, 'Condição Encadeada Simples', 'assets/img/estruturasControle/condicionalEncadeadaSimples.MP4', 'Estruturas de Controle', 'Estrutura onde um comando de decisão (se/if) fica dentro de outro. Serve para testar uma nova regra apenas se a primeira regra for verdadeira ou falsa.'),
+(50, 'Condição Encadeada Heterogênea', 'assets/img/estruturasControle/condicionalEncadeadaHeterogenea.MP4', 'Estruturas de Controle', 'Ocorre quando há vários comandos se (if) aninhados ou encadeados, mas sem um padrão lógico uniforme.'),
+(51, 'Condição Encadeada Homogênea', 'assets/img/estruturasControle/condicionalEncadeadaHomogenea.MP4', 'Estruturas de Controle', 'Ocorre quando comandos se-então são encaixados de forma uniforme e exclusiva apenas dentro dos blocos de teste, geralmente equivalendo a uma única validação com múltiplos operadores lógicos ou a uma estrutura de múltipla escolha.'),
+(52, 'Colar (ctrl+v)', 'assets/img/informaticaBasica/colar.MP4', 'Informática Básica', 'ato de inserir um conteúdo — como texto, imagem ou arquivo — que foi previamente copiado ou recortado para a memória temporária do sistema (área de transferência)');
 
 -- --------------------------------------------------------
 
@@ -122,7 +136,7 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de tabela `sinais`
 --
 ALTER TABLE `sinais`
-  MODIFY `idSinal` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
+  MODIFY `idSinal` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=53;
 
 --
 -- AUTO_INCREMENT de tabela `usuarios`
