@@ -30,7 +30,7 @@
         </div>
         <div class="inicio-visual">
             <img
-                src="assets/libras mulher.png"
+                src="assets/img/imagemInicial/libras mulher.png"
                 alt="Pessoa utilizando Libras"
             >
         </div>
@@ -41,7 +41,7 @@
         <div class="apresentacao-topo">
             <div class="apresentacao-imagem">
                 <img
-                    src="assets/libras2.png"
+                    src="assets/img/imagemInicial/libras2.png"
                     alt="Pessoas utilizando Libras"
                 >
                 <div class="marca-azul"></div>
@@ -136,7 +136,7 @@
 <section class="explorar" id="sinais">
     <div class="explorar-imagem">
 
-        <img src="assets/libras3.png"alt="Pessoa utilizando Libras">
+        <img src="assets/img/imagemInicial/libras3.png"alt="Pessoa utilizando Libras">
     </div>
     <div class="explorar-conteudo">
 
