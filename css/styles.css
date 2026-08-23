@@ -10885,3 +10885,45 @@ section {
   padding-top: 9rem;
   padding-bottom: 9rem;
 }
+/* Estilos dos Formulários de Login e Cadastro */
+body#page-top {
+    background-color: #fffbf0;
+    color: #212529;
+}
+
+.login-card, .register-card {
+    background-color: #ffffff;
+    border: 1px solid #e2ddd0;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #212529;
+    box-shadow: 0 0 0 0.25rem rgba(33, 37, 41, 0.12);
+}
+
+.btn-custom-dark {
+    background-color: #212529;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 12px;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-custom-dark:hover {
+    background-color: #343a40;
+    color: #ffffff;
+    transform: translateY(-1px);
+}
+
+.link-destaque {
+    color: #0d6efd;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.link-destaque:hover {
+    text-decoration: underline;
+}
