@@ -1,85 +1,83 @@
-<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+<!DOCTYPE html>
+<html lang="pt-BR">
 
-    <div class="navbar-container">
+<head>
+    <meta charset="UTF-8">
 
-        <a class="navbar-brand" href="index.php">
-            PLATAFORMA DE INCLUSÃO EM INFORMÁTICA
-        </a>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
-        <!-- BOTÃO DO MENU MOBILE -->
-        <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarResponsive"
-            aria-controls="navbarResponsive"
-            aria-expanded="false"
-            aria-label="Abrir menu"
-        >
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <title>Plataforma de Inclusão em Informática</title>
 
 
-        <!-- MENU -->
-        <div
-            class="collapse navbar-collapse"
-            id="navbarResponsive"
-        >
-
-            <ul class="navbar-nav">
-
-                <li class="nav-item">
-                    <a class="nav-link" href="index.php">
-                        INÍCIO
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="index.php#equidade">
-                        EQUIDADE NA EDUCAÇÃO
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="index.php#libras">
-                        IMPORTÂNCIA DA LIBRAS
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="dicionario.php">
-                        SINAIS NA TI
-                    </a>
-                </li>
-
-            </ul>
-
-
-            <!-- BOTÃO LOGIN -->
-            <a href="formLogin.php" class="btn-login">
-                LOGIN
-            </a>
-
-
-            <!-- PESQUISA -->
-            <form class="search-form">
-
-                <input
-                    type="text"
-                    placeholder="Pesquisar..."
-                    aria-label="Pesquisar"
-                >
-
-            </form>
-
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+    <link href="style.css" rel="stylesheet">
+</head>
+<body id="page-top">
+<?php include 'header.php'; ?>
+<section class="inicio">
+    <div class="inicio-container">
+        <div class="inicio-texto">
+            <span class="inicio-label">PLATAFORMA DE INCLUSÃO EM INFORMÁTICA</span>
+            <h1> Libras e tecnologia <br> <span>para todos.</span> </h1>
+            <p>Um guia digital prático que conecta a comunidade surda à tecnologia, ensinando conceitos e termos da informática em LIBRAS. </p>
+            <div class="inicio-botoes">
+                <a href="#sinais" class="btn-principal">  Explorar sinais  </a>
+                <a href="#apresentacao" class="btn-secundario"> Saiba mais</a>
+            </div>
         </div>
-
+        <div class="inicio-visual">
+            <img
+                src="assets/libras mulher.png"
+                alt="Pessoa utilizando Libras"
+            >
+        </div>
     </div>
+</section>
+<section class="apresentacao" id="apresentacao">
+    <div class="apresentacao-container">
+        <div class="apresentacao-topo">
+            <div class="apresentacao-imagem">
+                <img
+                    src="assets/libras2.png"
+                    alt="Pessoas utilizando Libras"
+                >
+                <div class="marca-azul"></div>
+            </div>
+            <div class="apresentacao-texto">
+                <h2>  APRESENTAÇÃO </h2>
+                <p> Nossa plataforma foi criada para aproximar Libras e tecnologia, oferecendo um espaço acessível para conhecer conceitos de informática conhecimento digital. </p>
+            </div>
+        </div>
+        <div class="objetivo">
+            <div class="detalhe-esquerdo">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="objetivo-conteudo">
+                <div class="objetivo-titulo">
+                    <div class="risco risco-esquerdo"></div>
+                    <h2> OBJETIVO </h2>
+                    <div class="risco risco-direito"></div>
+                </div>
+                <p> Queremos tornar o aprendizado de informática mais acessível e inclusivo. A plataforma reúne conteúdos visuais e informações sobre Libras e tecnologia para facilitar a compreensão e ampliar o acesso ao conhecimento.</p>
+            </div>
+            <div class="detalhe-direito">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+</section>
 
-<<<<<<< HEAD
-</nav>
-=======
 <section class="como-funciona" id="equidade">
 
     <div class="como-container">
@@ -149,7 +147,7 @@
             <p>Explore nosso dicionário de sinais relacionadosà informática e descubra uma nova forma deaprender tecnologia.</p>
         </div>
         <div class="explorar-botao">
-            <a href="dicionario.php" class="btn-explorar">EXPLORAR SINAIS</a>
+            <a href="#" class="btn-explorar">EXPLORAR SINAIS</a>
         </div>
     </div>
 </section>
@@ -165,4 +163,3 @@
 
 </body>
 </html>
->>>>>>> 8b87370e232f7cffb7b7871137f3e4bd7b713889
